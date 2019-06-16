@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cress Selector</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="coachMark" id="coachMark">
+        <div class="coachMark__overlay"></div>
+        <img class="coachMark__arrow" src="assets/arrow.svg">
+        <img id='mouseCursor' class="coachMark__mouse" src="assets/pointinghand.svg">
+        <a class="button coachMark__button" id="coachMark__button">
+            Ik snap het
+            <img src='assets/cressArrow.png'>
+        </a>
+    </div>
+
+    <div class="background__element1">
+        <img src="assets/cress-1.png">
+    </div>
+    <div class="background__element2">
+        <img src="assets/cress-2.png">
+        </div>
+    <div class="menu">
+        <ul class="menu__list">
+
+        <div class="menu__item">
+            Products
+        </div>
+        <div class="menu__item">
+            Travel Stories
+        </div>
+
+        <div class="menu__item menu__item--active">
+                Cress Selector
+
+        </div>
+        <div class="menu__item menu__item--logo">
+                <img src="assets/logo.jpg">
+        </div>
+        <div class="menu__item">
+                Resellers
+        </div>
+            <div class="menu__item">
+                About Koppert Cress
+            </div>
+            <div class="menu__item">
+                Contact
+            </div>
+        </ul>
+
+    </div>
+    <div class='cressSelector'>
+            <div class='actualSelector actualSelector--coachMark'>
+                <div class="actualSelector__text actualSelector__text" id="cressSelector__text">
+                <div class="actualSelector__title">
+                       FIND YOUR PERFECT CRESS <br>
+                </div>
+                <div class="actualSelector__subtitle">
+                    Sleep om de gewenste smaak samen te stellen
+                </div>
+                </div>
+            </div>
+        <div class='cressOverview'id="cressoverviews">
+            <div class='cressOverview__title'> 
+                BEST MATCHES 
+                <div class="cressOverview__subtitle"> | 34 producten</div>
+            </div>
+            <div class="cressOverview__matches"></div>
+            <div class="cressOverview__navigation">
+                <div class="cressOverview__prev">
+                </div>
+                <div class="cressOverview__pageIndicator"> </div>
+                <div class="cressOverview__next">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <img class="popup__image">
+           
+            <div class="popup__content">
+                <h2 class="popup__name"> </h2>
+                <div class="popup__tastes">
+                </div>
+                <div class="popup__matchings"> Past goed bij: <br> Frisse gerechten, guacamole, zeebaars
+                </div>
+                <a class="button popup__button" >
+                    Vind cress
+                    <img src='assets/cressArrow.png'>
+                </a>   
+            </div> 
+            <a class="close" onclick=closePopup()>Sluit</a>
+        </div>
+    </div>
+
+
+
+    <div id="contrast-ratio-chart"></div>
+    <script>
+    function closePopup(){
+        var Popup = document.getElementById('popup1');
+        Popup.classList.remove('overlay--active');
+    }
+    </script>
+    <script src="js/p5.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/p5.dom.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body></html>
